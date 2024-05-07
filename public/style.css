@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 500px;
+    max-height: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"] ,input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrCodeContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#download{
+    position: relative;
+    top: 10px;
+    right: 60px;
+}
+#download:hover{
+    cursor: pointer;
+}
+#dimg{
+    position: relative;
+    left: 90px;
+    bottom: 10px;
+}
+/* Apply basic styling to the dropdown */
+select {
+    width: 100%;
+    padding: 8px; /* Add padding to improve readability and appearance */
+    font-size: 14px; /* Adjust font size */
+    border: 1px solid #ccc; /* Add border for visual distinction */
+    border-radius: 4px; /* Add rounded corners */
+  }
+  
+  
+  /* Apply hover effect */
+  select:hover {
+    border-color: #999; /* Change border color on hover */
+  }
+  
+  /* Apply focus effect */
+  select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+  }
+  #submitButtonPayment{
+    margin-top: 15px;
+  }
