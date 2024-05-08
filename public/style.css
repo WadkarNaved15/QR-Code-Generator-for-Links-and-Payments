@@ -63,31 +63,49 @@ button:hover {
 #download:hover{
     cursor: pointer;
 }
+#downloadp{
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+#downloadp:hover{
+    cursor: pointer;
+}
 #dimg{
     position: relative;
     left: 90px;
     bottom: 10px;
 }
-/* Apply basic styling to the dropdown */
+#dpimg{
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+}
+
 select {
     width: 100%;
-    padding: 8px; /* Add padding to improve readability and appearance */
-    font-size: 14px; /* Adjust font size */
-    border: 1px solid #ccc; /* Add border for visual distinction */
-    border-radius: 4px; /* Add rounded corners */
+    padding: 8px; 
+    font-size: 14px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
   }
   
   
-  /* Apply hover effect */
   select:hover {
-    border-color: #999; /* Change border color on hover */
+    border-color: #999; 
   }
   
-  /* Apply focus effect */
+
   select:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+    border-color: #007bff; 
   }
   #submitButtonPayment{
     margin-top: 15px;
+  }
+
+  .transaction{
+    display: flex;
+    gap: 20px;
+
   }

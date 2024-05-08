@@ -68,10 +68,12 @@ app.post('/transaction-link',upload.none(), async(req, res) => {
     const qrCodeData = await qrcode.toDataURL(transactionLink);
     // Send the transaction link as a response
     res.send(`
-        <h1>Transaction Link</h1>
-        <p><a href="${transactionLink}">Click here to initiate payment</a></p>
-        <img id="dimg" src="${qrCodeData}" alt="QR Code">
-    <a href="${qrCodeData}" download="qrcode.png"><button id="download">Download QR Code</button></a>
+        <div class="transaction">
+            <h3>Transaction Link :</h3>
+            <p><a href="${transactionLink}">Click here to initiate payment</a></p>
+        </div>
+        <img id="dpimg" src="${qrCodeData}" alt="QR Code">
+        <a href="${qrCodeData}" download="qrcode.png"><button id="downloadp">Download QR Code</button></a>
     `);
 });
 // Start the server
